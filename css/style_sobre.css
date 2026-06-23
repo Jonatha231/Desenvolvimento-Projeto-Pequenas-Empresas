@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* TÍTULOS */
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: rgba(0,0,0,.8);
+
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+h2{
+    font-family: "Birthstone", cursive;
+    font-size: 60px;
+    font-weight: 400;
+
+    text-align: center;
+
+    margin-top: -40px;
+
+    color: rgba(0,0,0,.8);
+}
+
+
+/* TEXTO */
+p{
+    width: 100%;
+    max-width: 700px;
+
+    font-size: 23px;
+    line-height: 1.7;
+
+    text-align: justify;
+
+    color: rgba(0,0,0,.8);
+}
+
+
+/* SOBRE */
+.sobre{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 50px;
+
+    padding: 50px;
+}
+
+.sobre img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* FOOTER */
+.foot3{
+    width: 100%;
+    margin-top: 100px;
+
+    background-color: black;
+}
+
+
+/* TABLETS */
+@media (max-width:1024px){
+
+    h1{
+        font-size: 42px;
+    }
+
+    h2{
+        font-size: 52px;
+        margin-top: -20px;
+    }
+
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .sobre{
+        padding: 40px 25px;
+        gap: 35px;
+    }
+}
+
+
+/* CELULARES */
+@media (max-width:768px){
+
+    h1{
+        font-size: 34px;
+    }
+
+    h2{
+        font-size: 45px;
+        margin-top: 0;
+    }
+
+    p{
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .sobre{
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .sobre img{
+        max-width: 350px;
+    }
+
+    .foot3{
+        margin-top: 70px;
+    }
+}
+
+
+/* CELULARES PEQUENOS */
+@media (max-width:480px){
+
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .sobre{
+        padding: 25px 15px;
+    }
+
+    .sobre img{
+        max-width: 280px;
+    }
+
+    .foot3{
+        margin-top: 50px;
+    }
+}
